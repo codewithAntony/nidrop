@@ -1,10 +1,12 @@
-import Header from "./components/Header"
+// import Header from "./components/Header"
+import Navigation from "./components/Navigation"
 
 function App() {
 
   return (
-    <div>
-      <Header />
+    <div className="min-h-screen bg-[#F5EFEB]">
+      {/* <Header /> */}
+      <Navigation />
     </div>
   )
 }
