@@ -14,7 +14,7 @@ type RouteRequest struct {
 
 
 func RegisterRoutes(r *gin.Engine) {
-	r.Post("/route", handleRoute)
+	r.POST("/route", handleRoute)
 }
 
 func handleRoute(c *gin.Context) {
