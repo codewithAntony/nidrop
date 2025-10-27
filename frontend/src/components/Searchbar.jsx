@@ -15,10 +15,8 @@ const SearchBar = () => {
 
   return (
     <div className="w-full max-w-3xl mx-auto p-4">
-      {/* Container */}
-      <div className="bg-white rounded-sm shadow-md flex flex-col sm:flex-row items-center justify-between p-8 sm:p-2">
-        {/* Start Input */}
-        <div className="flex-1 px-4 border border-gray-400 rounded-sm py-2 mb-2 lg:border-none">
+      <div className="bg-white rounded-md shadow-md flex flex-col sm:flex-row items-center justify-between p-8 sm:p-2">
+        <div className="flex-1 px-4 border border-gray-400 rounded-sm py-2 mb-2 sm:border-none">
           <p className="text-xs text-gray-500">Start</p>
           <input
             type="text"
@@ -29,16 +27,14 @@ const SearchBar = () => {
           />
         </div>
 
-        {/* Swap Button */}
         <button
           onClick={handleSwap}
-          className="bg-orange-500 hover:bg-orange-600 text-white rounded-full p-2 mx-2 transition-colors"
+          className="bg-[#EB5241] hover:bg-[#EB5241] text-white rounded-full p-2 mx-2 transition-colors"
         >
           <ArrowLeftRight size={16} />
         </button>
 
-        {/* End Input */}
-        <div className="flex-1 px-4 border border-gray-400 rounded-sm py-2 my-2 lg:border-none">
+        <div className="flex-1 px-4 border border-gray-400 rounded-sm py-2 my-2 sm:border-none">
           <p className="text-xs text-gray-500">End</p>
           <input
             type="text"
@@ -49,8 +45,7 @@ const SearchBar = () => {
           />
         </div>
 
-        {/* Search Button */}
-        <button className="bg-orange-500 hover:bg-orange-600 text-white rounded-full p-3 ml-2 transition-colors">
+        <button className="bg-[#EB5241] hover:bg-[#EB5241] text-white rounded-full p-3 ml-2 transition-colors">
           <Search size={18} />
         </button>
       </div>
